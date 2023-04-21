@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*scroller style*/
+::-webkit-scrollbar
+{
+    width: .5rem;
+}
+::-webkit-scrollbar-track
+{
+    background: none;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #b6b4b4;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+  background: #888;
+}
+/* start navbar*/
+.navbar
+{
+    height: 50px;
+    margin-top: .5rem;
+}
+.navbar .navbar-cont .leftsec
+{
+  width: fit-content;
+}
+.w-11
+{
+    width: 11%;
+}
+.navbar .navbar-cont .leftsec a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -1.5px;
+}
+.navbar .navbar-cont .leftsec i
+{
+    font-size: 1.1rem;
+    padding-top: .6rem;
+    font-weight:lighter;
+}
+.navbar .middlesec .input-group-text
+{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-weight: lighter;
+
+}
+.navbar .middlesec .input-group-text:hover
+{
+    cursor: pointer;
+    background-color: #f0f0f0;
+
+}
+.navbar .middlesec button 
+{
+  background-color: transparent;
+  border: none;
+  padding:0px 1px;
+  height: 2rem;
+}
+.navbar .middlesec button i
+{
+  color: rgb(3, 3, 3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: .6rem;
+}
+.navbar .middlesec .modal-dialog .modal-header
+{
+    padding-top: 2.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-body
+{
+    padding-bottom: 6rem;
+}
+.navbar .middlesec .modal-dialog .modal-footer
+{
+    padding-top: 2.3rem;
+    padding-bottom: 3.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-footer .fa-microphone
+{
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #b4b0b0;
+    margin-right: 12rem;
+    padding-top: 1rem;
+}
+.middlesec .input-group input
+{
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+} 
+.middlesec .input-group span
+{
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+} 
+.navbar .middlesec .input-group span
+{
+    background-color: #f8f8f8;
+    font-weight: 100;
+}
+.navbar .rightsec  .dropstart button
+{
+    color: black;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    height: 2.5rem;
+}
+.navbar .rightsec .dropstart ul
+{
+  padding-top: 1rem;
+  padding-bottom: .2rem;
+  font-size: .79rem;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgb(3, 3, 3);
+  width: 250px;
+  padding-left: .6rem;
+  padding-right: .8rem;
+}
+.navbar .rightsec .dropstart ul li
+{
+  padding-bottom: .7rem;
+  width: 100%;
+}
+.navbar .rightsec .dropstart ul span
+{
+  padding-left: 1rem;
+}
+.navbar .rightsec .dropstart ul .li-underline
+{
+ border-bottom:1px solid #d6d6d6;
+}
+.navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  border: 1px solid rgb(6, 95, 212);
+  padding: .45rem 1rem;
+  color: rgb(6, 95, 212);
+}
+.navbar .rightsec .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+/*end navbar */
+/*start open-video*/
+.open-video
+{
+    background-color:#f9f9f9;
+    overflow-y: scroll;
+}
+.open-video .row .video-desc .video-name
+{
+   font-weight: 500;
+   color: black;
+   font-size: 1.1rem;
+}
+.open-video .row .video-desc .video-info p
+{
+    font-size: .875rem;
+}
+.open-video .row .video-desc .video-info i
+{
+    color: black;
+}
+.open-video .row .video-desc .video-info i span
+{
+    font-size: .9rem;
+    padding-left: .2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.underline1
+{
+    border-bottom: 1px solid rgba(0, 0,0,0.1);
+}
+.open-video .row .video-desc .video-subscribe img
+{
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+}
+.open-video .row .video-desc .video-subscribe p
+{
+    padding-top: .2rem;
+    padding-left: 1rem;
+    color: black;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.open-video .row .video-desc .video-subscribe p span
+{
+    font-size: .8rem;
+    color: rgb(90, 89, 89);
+}
+.open-video .row .video-desc .video-subscribe button
+{
+    width: 110px;
+    height: 37px;
+    background-color: rgb(212, 4, 4);
+    color: white;
+    padding-top: .5rem;
+    padding-bottom:  .5rem;
+    font-size: .875rem;
+    font-weight: 500;
+    border: none;
+}
+.open-video .row .video-desc .video-subscribe ul 
+{
+    padding-top: 1rem;
+}
+.open-video .row .video-desc .video-subscribe ul li
+{
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+}
+.open-video .row .video-desc .video-subscribe ul p
+{
+    font-weight: 500;
+    padding-left: 0;
+}
+.open-video .row .video-desc .video-subscribe ul span
+{
+    font-size: .75rem;
+    color: #717171;
+    padding-bottom: 2rem;
+}
+.open-video .row .video-desc .video-subscribe ul a
+{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.open-video .row .video-desc .video-subscribe .video-subscribe3 a
+{
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+    font-size: .9rem;
+    font-weight: 500;
+}
+.open-video .row .video-desc .comments
+{
+    font-size: .9rem;
+}
+.open-video .suggested-videos .suggested-video .video-img p
+{
+    top: 6.2rem;
+    right: .2rem;
+    color: white;
+    font-size: .7rem;
+    width: 3.5rem;
+    height: 1.1rem;
+    background-color: rgba(0, 0,0,0.6);
+}
+.open-video .suggested-videos .suggested-video .sug-video-cont .video-title
+{
+    font-size: .9rem;
+    color: black;
+}
+.open-video .suggested-videos .suggested-video .sug-video-cont p
+{
+    font-size: .75rem;
+    color: #404040;
+}
+/*end open-video*/
+
+@media screen and (max-width:500px)
+{
+  .navbar
+  {
+    justify-content:left;
+  }
+  .navbar .leftsec a i
+  {
+    display: none;
+  }
+  .navbar .leftsec a img
+  {
+    width: 100%;
+    height: 40%;
+  }
+  .navbar .leftsec a span
+  {
+    display: none;
+  }
+  .navbar .middlesec .input-group
+  {
+    width: 90% !important;
+  }
+  .navbar .middlesec .input-group span
+  {
+    width: 15%;
+  }
+  .navbar .middlesec button
+  {
+    display: none;
+  }
+  .navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  padding: .5rem 1rem;
+}
+.navbar .rightsec .fa-circle-user span
+{
+    display: none;
+}
+.open-video iframe
+{
+    width: 100%;
+}
+.open-video .video-info 
+{
+    flex-direction: column;
+}
+.open-video .video-info .interact i
+{
+    padding-left: 1rem;
+}
+}

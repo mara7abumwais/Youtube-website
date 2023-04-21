@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*scroller style*/
+::-webkit-scrollbar
+{
+    width: .5rem;
+}
+::-webkit-scrollbar-track
+{
+    background: none;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #b6b4b4;
+    border-radius: 5px;
+}
+.sidenav::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border-radius: 5px;
+}
+.sidenav:hover::-webkit-scrollbar-thumb
+{
+    background: #717171;
+}
+::-webkit-scrollbar-thumb:hover
+{
+  background: #888;
+}
+/* start navbar*/
+.navbar
+{
+    height: 50px;
+    margin-top: .5rem;
+}
+.navbar .navbar-cont .leftsec
+{
+  width: fit-content;
+}
+.w-11
+{
+    width: 11%;
+}
+.navbar .navbar-cont .leftsec a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -1.5px;
+}
+.navbar .navbar-cont .leftsec i
+{
+    font-size: 1.1rem;
+    padding-top: .6rem;
+    font-weight:lighter;
+}
+.navbar .middlesec .input-group-text
+{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-weight: lighter;
+
+}
+.navbar .middlesec .input-group-text:hover
+{
+    cursor: pointer;
+    background-color: #f0f0f0;
+
+}
+.navbar .middlesec button 
+{
+  background-color: transparent;
+  border: none;
+  padding:0px 1px;
+  height: 2rem;
+}
+.navbar .middlesec button i
+{
+  color: rgb(3, 3, 3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: .6rem;
+}
+.navbar .middlesec .modal-dialog .modal-header
+{
+    padding-top: 2.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-body
+{
+    padding-bottom: 6rem;
+}
+.navbar .middlesec .modal-dialog .modal-footer
+{
+    padding-top: 2.3rem;
+    padding-bottom: 3.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-footer .fa-microphone
+{
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #b4b0b0;
+    margin-right: 12rem;
+    padding-top: 1rem;
+}
+.middlesec .input-group input
+{
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+} 
+.middlesec .input-group span
+{
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+} 
+.navbar .middlesec .input-group span
+{
+    background-color: #f8f8f8;
+    font-weight: 100;
+}
+.navbar .rightsec  .dropstart button
+{
+    color: black;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    height: 2.5rem;
+}
+.navbar .rightsec .dropstart ul
+{
+  padding-top: 1rem;
+  padding-bottom: .2rem;
+  font-size: .79rem;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgb(3, 3, 3);
+  width: 250px;
+  padding-left: .6rem;
+  padding-right: .8rem;
+}
+.navbar .rightsec .dropstart ul li
+{
+  padding-bottom: .7rem;
+  width: 100%;
+}
+.navbar .rightsec .dropstart ul span
+{
+  padding-left: 1rem;
+}
+.navbar .rightsec .dropstart ul .li-underline
+{
+ border-bottom:1px solid #d6d6d6;
+}
+.navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  border: 1px solid rgb(6, 95, 212);
+  padding: .45rem 1rem;
+  color: rgb(6, 95, 212);
+}
+.navbar .rightsec .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+/*end navbar */
+/*start youtube-content*/
+.youtube-content
+{
+    height: calc(100vh - 70px);
+}
+.youtube-content .sidenav
+{
+  padding-right: 12px;
+  width: 265px;
+  overflow-y: scroll;
+  background-color: white;
+}
+.youtube-content .sidenav .sidenav-lg
+{
+    display: flex;
+    flex-direction: column;
+}
+.youtube-content .sidenav .nav-buttons
+{
+    padding: 18px;
+    height: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color:rgb(3, 3, 3);
+    text-decoration: none;
+}
+.youtube-content .sidenav .underlined
+{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: .6rem;
+}
+.youtube-content .sidenav .nav-buttons:hover
+{
+    background-color: rgba(0,0, 0, 0.05);
+}
+.youtube-content .sidenav .nav-buttons p
+{
+    margin-left: 1.5rem;
+    padding-top: 1.3rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.youtube-content .sidenav .active
+{
+    background-color: #e5e5e5;
+}
+.active-p
+{
+    font-weight: 500;
+}
+.youtube-content .sidenav .sign-in
+{
+    padding-left: 1.5rem;
+}
+.youtube-content .sidenav .sign-in p
+{
+    font-weight: 400;
+    font-size: .8rem;
+    color: black;
+}
+.youtube-content .sidenav .sign-in .fa-circle-user
+{
+  border: 1px solid rgb(6, 95, 212);
+  padding: .5rem 1rem;
+  width: 7rem;
+  color: rgb(6, 95, 212);
+}
+.youtube-content .sidenav .sign-in .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-family: 'Roboto', sans-serif;
+}
+.youtube-content .sidenav .explore
+{
+    color: rgb(96, 96, 96);
+    font-size: .92rem;
+    padding-left: 1.5rem;
+     font-weight: 500;
+}
+.youtube-content .sidenav .circle-buttons i
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color:  #404040;
+    color: rgb(241, 237, 237);
+    font-size: .7rem;
+    text-align: center;
+    padding-top: .42rem;
+}
+.youtube-content .sidenav .sidenav-sm
+{
+    display: flex;
+    flex-direction: column;
+}
+.youtube-content .sidenav .sidenav-sm a p
+{
+    font-size: .6rem;
+}
+.youtube-content .sidenav .sidenav-sm .nav-buttons
+{
+    height: 14%;
+}
+.youtube-content .cont-short
+{
+    overflow-y: scroll;
+    background-color:#f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+.youtube-content .cont-short .short-video
+{
+    height: 95%;
+}
+.youtube-content .cont-short .short-video .short-img img
+{
+    border-radius: 1rem;
+}
+.youtube-content .cont-short .short-video .short-img .fa-play
+{
+    top:1rem;
+    left: 1rem;
+    color: white;
+}
+.youtube-content .cont-short .short-video .short-img .fa-volume-high
+{
+    top:1rem;
+    right: 1rem;
+    color: white;
+}
+.youtube-content .cont-short .short-video .short-img i:hover
+{
+    cursor: pointer;
+}
+.youtube-content .cont-short .short-video .short-img button
+{
+    bottom: 1rem;
+    right: 1rem;
+}
+.youtube-content .cont-short .short-video .short-img button
+{
+    width: 100px;
+    height: 33px;
+    background-color: rgb(212, 4, 4);
+    color: white;
+    padding-top: .5rem;
+    padding-bottom:  .4rem;
+    font-size: .875rem;
+    font-weight: 500;
+    border: none;
+    font-weight: 500;
+}
+.youtube-content .cont-short .short-video ul 
+{
+    padding-top: 1rem;
+}
+.youtube-content .cont-short .short-video  ul li
+{
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+}
+.youtube-content .cont-short .short-video ul p
+{
+    font-weight: 500;
+    padding-left: 0;
+    font-size: .78rem;
+    color: black;
+}
+.youtube-content .cont-short .short-video ul span
+{
+    font-size: .75rem;
+    color: #717171;
+    padding-bottom: 2rem;
+}
+.youtube-content .cont-short .short-video  ul a
+{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.youtube-content .cont-short .short-video .short-img p
+{
+    font-size: .8rem;
+    bottom: 2.5rem;
+    left: 1rem;
+    color: white;
+}
+.youtube-content .cont-short .short-video .short-img .channel-pic
+{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    bottom: .8rem;
+    left: 1rem;
+}
+.youtube-content .cont-short .short-video .short-img .channel-name
+{
+    color: white;
+    bottom: 1.2rem;
+    left: 3.8rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.youtube-content .cont-short .short-img ul li p
+{
+    color: black !important;
+}
+.youtube-content .cont-short .short-video .short-interact i:hover
+{
+    cursor: pointer;
+}
+.youtube-content .cont-short .short-video .short-interact .menu
+{
+  
+  color: rgb(143, 141, 141);
+}
+.youtube-content .cont-short .short-video .short-interact .interact i
+{
+    font-size: 1.8rem;
+    color: rgb(90, 89, 89);
+}
+.youtube-content .cont-short .short-video .short-interact .interact span
+{
+    font-size: .7rem;
+    color: rgb(96, 96, 96);
+    padding-bottom: 1rem;
+}
+.youtube-content .cont-short .short-video .short-interact ul
+{
+    padding-top: .1rem;
+}
+.youtube-content .cont-short .short-video .short-interact ul li
+{
+    padding-top: .4rem;
+}
+.youtube-content .cont-short .short-video .short-interact ul li p
+{
+  padding-left: .8rem;
+  font-size: .88rem;
+}
+.youtube-content .cont-short .short-video .short-interact ul li i
+{
+    padding-top: .1rem;
+    font-size: 1.2rem;
+}
+.youtube-content .cont-short .short-video .short-interact ul li:hover
+{
+    cursor: pointer;
+    background-color: rgb(190, 189, 189);
+}
+
+/* media query*/
+@media screen and (max-width:500px)
+{
+  .navbar
+  {
+    justify-content:left;
+  }
+  .navbar .leftsec a i
+  {
+    display: none;
+  }
+  .navbar .leftsec a img
+  {
+    width: 100%;
+    height: 40%;
+  }
+  .navbar .leftsec a span
+  {
+    display: none;
+  }
+  .navbar .middlesec .input-group
+  {
+    width: 90% !important;
+  }
+  .navbar .middlesec .input-group span
+  {
+    width: 15%;
+  }
+  .navbar .middlesec button
+  {
+    display: none;
+  }
+  .navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  padding: .5rem 1rem;
+}
+.navbar .rightsec .fa-circle-user span
+{
+    display: none;
+}
+.youtube-content .sidenav .sidenav-lg
+{
+    display: none;
+}
+.youtube-content .cont-video .items
+{
+    display: none;
+}
+.youtube-content .sidenav 
+ {
+    width: 60%;
+ }
+ .youtube-content .cont-short .short-img button
+ {
+    display: none;
+ }
+}
+@media screen and (min-width:500.99px)
+{
+    .youtube-content .sidenav .sidenav-sm
+    {
+        display: none;
+    }
+}

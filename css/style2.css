@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*start login-page*/
+.login .login-info 
+{
+  padding: 3rem 2.2rem;
+  border: 1px solid rgb(221, 220, 220);
+  border-radius: .4rem;
+}
+.login .login-info .sign-in
+{
+    font-size: 1.5rem;
+}
+.w-20
+{
+ width: 20%;
+}
+.login .login-info .input-group input
+{
+    padding: 15px 8px;
+}
+.login .login-info a
+{
+    font-size: .88rem;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.login .login-info span
+{
+    font-size: .9rem;
+    color: #6b6969;
+}
+.login .login-info .create-button
+{
+    background-color: transparent;
+    padding: 5px 9px;
+}
+.login .login-info .create-button:hover
+{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.login .login-info .next-button
+{
+    background-color: #1a73e8    ;
+    padding: 8px 22px;
+    color: white;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.login .login-info .next-button:hover
+{
+    background-color: #1665ce    ;
+}
+.login .login-help button
+{
+   font-size: .8rem;
+   padding: 0px 22px;
+   background-color: transparent;
+   color: black;
+   border: none;
+}
+.login .login-help ul 
+{
+    font-size: .7rem;
+}
+.w-35
+{
+    width: 35%;
+}
+.login .login-help p
+{
+    font-size: .8rem;
+    color: #4e4e4e;
+}
+/*end login-page*/
+

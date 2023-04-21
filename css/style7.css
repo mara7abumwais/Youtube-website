@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*scroller style*/
+::-webkit-scrollbar
+{
+    width: .5rem;
+}
+::-webkit-scrollbar-track
+{
+    background: none;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #b6b4b4;
+    border-radius: 5px;
+}
+.sidenav::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border-radius: 5px;
+}
+.sidenav:hover::-webkit-scrollbar-thumb
+{
+    background: #717171;
+}
+::-webkit-scrollbar-thumb:hover
+{
+  background: #888;
+}
+/* start navbar*/
+.navbar
+{
+    height: 50px;
+    margin-top: .5rem;
+}
+.navbar .navbar-cont .leftsec
+{
+  width: fit-content;
+}
+.w-11
+{
+    width: 11%;
+}
+.navbar .navbar-cont .leftsec a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -1.5px;
+}
+.navbar .navbar-cont .leftsec i
+{
+    font-size: 1.1rem;
+    padding-top: .6rem;
+    font-weight:lighter;
+}
+.navbar .middlesec .input-group-text
+{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-weight: lighter;
+
+}
+.navbar .middlesec .input-group-text:hover
+{
+    cursor: pointer;
+    background-color: #f0f0f0;
+
+}
+.navbar .middlesec button 
+{
+  background-color: transparent;
+  border: none;
+  padding:0px 1px;
+  height: 2rem;
+}
+.navbar .middlesec button i
+{
+  color: rgb(3, 3, 3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: .6rem;
+}
+.navbar .middlesec .modal-dialog .modal-header
+{
+    padding-top: 2.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-body
+{
+    padding-bottom: 6rem;
+}
+.navbar .middlesec .modal-dialog .modal-footer
+{
+    padding-top: 2.3rem;
+    padding-bottom: 3.3rem;
+    border: none;
+}
+.navbar .middlesec .modal-dialog .modal-footer .fa-microphone
+{
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #b4b0b0;
+    margin-right: 12rem;
+    padding-top: 1rem;
+}
+.middlesec .input-group input
+{
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+} 
+.middlesec .input-group span
+{
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+} 
+.navbar .middlesec .input-group span
+{
+    background-color: #f8f8f8;
+    font-weight: 100;
+}
+.navbar .rightsec  .dropstart button
+{
+    color: black;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    height: 2.5rem;
+}
+.navbar .rightsec .dropstart ul
+{
+  padding-top: 1rem;
+  padding-bottom: .2rem;
+  font-size: .79rem;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgb(3, 3, 3);
+  width: 250px;
+  padding-left: .6rem;
+  padding-right: .8rem;
+}
+.navbar .rightsec .dropstart ul li
+{
+  padding-bottom: .7rem;
+  width: 100%;
+}
+.navbar .rightsec .dropstart ul span
+{
+  padding-left: 1rem;
+}
+.navbar .rightsec .dropstart ul .li-underline
+{
+ border-bottom:1px solid #d6d6d6;
+}
+.navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  border: 1px solid rgb(6, 95, 212);
+  padding: .45rem 1rem;
+  color: rgb(6, 95, 212);
+}
+.navbar .rightsec .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+/*end navbar */
+/*start youtube-content*/
+.youtube-content
+{
+    height: calc(100vh - 70px);
+}
+.youtube-content .sidenav
+{
+  padding-right: 12px;
+  width: 265px;
+  overflow-y: scroll;
+  background-color: white;
+}
+.youtube-content .sidenav .sidenav-lg
+{
+    display: flex;
+    flex-direction: column;
+}
+.youtube-content .sidenav .nav-buttons
+{
+    padding: 18px;
+    height: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color:rgb(3, 3, 3);
+    text-decoration: none;
+}
+.youtube-content .sidenav .underlined
+{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: .6rem;
+}
+.youtube-content .sidenav .nav-buttons:hover
+{
+    background-color: rgba(0,0, 0, 0.05);
+}
+.youtube-content .sidenav .nav-buttons p
+{
+    margin-left: 1.5rem;
+    padding-top: 1.3rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.youtube-content .sidenav .active
+{
+    background-color: #e5e5e5;
+}
+.active-p
+{
+    font-weight: 500;
+}
+.youtube-content .sidenav .sign-in
+{
+    padding-left: 1.5rem;
+}
+.youtube-content .sidenav .sign-in p
+{
+    font-weight: 400;
+    font-size: .8rem;
+    color: black;
+}
+.youtube-content .sidenav .sign-in .fa-circle-user
+{
+  border: 1px solid rgb(6, 95, 212);
+  padding: .5rem 1rem;
+  width: 7rem;
+  color: rgb(6, 95, 212);
+}
+.youtube-content .sidenav .sign-in .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-family: 'Roboto', sans-serif;
+}
+.youtube-content .sidenav .explore
+{
+    color: rgb(96, 96, 96);
+    font-size: .92rem;
+    padding-left: 1.5rem;
+     font-weight: 500;
+}
+.youtube-content .sidenav .circle-buttons i
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color:  #404040;
+    color: rgb(241, 237, 237);
+    font-size: .7rem;
+    text-align: center;
+    padding-top: .42rem;
+}
+.youtube-content .sidenav .sidenav-sm
+{
+    display: flex;
+    flex-direction: column;
+}
+.youtube-content .sidenav .sidenav-sm a p
+{
+    font-size: .6rem;
+}
+.youtube-content .sidenav .sidenav-sm .nav-buttons
+{
+    height: 14%;
+}
+.youtube-content .cont-video
+{
+    overflow-y: scroll;
+}
+.youtube-content .cont-video
+{
+    background-color:#f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+.youtube-content .cont-video .subscription-cont
+{
+    width: 50%;
+}
+.youtube-content .cont-video .subscription-cont .fa-photo-film
+{
+    font-size: 5rem;
+}
+.youtube-content .cont-video .subscription-cont p
+{
+    font-size: .8rem;
+}
+.youtube-content .cont-video a .fa-circle-user
+{
+  border: 1px solid rgb(6, 95, 212);
+  padding: .5rem 1rem;
+  width: 7rem;
+  color: rgb(6, 95, 212);
+}
+.youtube-content .cont-video a  .fa-circle-user span
+{
+    padding-left: .4rem;
+    font-size: .750rem ;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width:500px)
+{
+  .navbar
+  {
+    justify-content:left;
+  }
+  .navbar .leftsec a i
+  {
+    display: none;
+  }
+  .navbar .leftsec a img
+  {
+    width: 100%;
+    height: 40%;
+  }
+  .navbar .leftsec a span
+  {
+    display: none;
+  }
+  .navbar .middlesec .input-group
+  {
+    width: 90% !important;
+  }
+  .navbar .middlesec .input-group span
+  {
+    width: 15%;
+  }
+  .navbar .middlesec button
+  {
+    display: none;
+  }
+  .navbar .rightsec .fa-circle-user
+{
+  margin-top: .4rem;
+  padding: .5rem 1rem;
+}
+.navbar .rightsec .fa-circle-user span
+{
+    display: none;
+}
+.youtube-content .sidenav
+{
+    width: 22%;
+}
+.youtube-content .sidenav .sidenav-lg
+{
+    display: none;
+}
+}
+
+@media screen and (min-width:500.99px)
+{
+    .youtube-content .sidenav .sidenav-sm
+    {
+        display: none;
+    }
+}
